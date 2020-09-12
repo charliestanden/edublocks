@@ -1,0 +1,123 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="kue-?IAdDJx+_G__6]b_">turtle</variable>
+    <variable id="#+nhh*R:_J{4HS_E}=2V">screen</variable>
+  </variables>
+  <block type="import_turtle" id="^GDXW,CwM-wXe!4P=DtL" x="-596" y="-351">
+    <next>
+      <block type="turtle" id="X8h~m;6i)=D:)ID@zWVh">
+        <field name="turtle" id="kue-?IAdDJx+_G__6]b_">turtle</field>
+        <next>
+          <block type="screeninit" id="Q.3WDm2e:C^^#[ArY,/l">
+            <field name="wn" id="#+nhh*R:_J{4HS_E}=2V">screen</field>
+            <next>
+              <block type="background" id="M/LJjs;[?DJMX(7l95e{">
+                <field name="wn" id="#+nhh*R:_J{4HS_E}=2V">screen</field>
+                <value name="text">
+                  <shadow type="textinline" id=";;Pqu:9QP!a@|rrHmY4a">
+                    <field name="text">0, 0, 0</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="colour" id="b|l-pi=LxQ!$BXU6!T(9">
+                    <field name="turtle" id="kue-?IAdDJx+_G__6]b_">turtle</field>
+                    <value name="text">
+                      <shadow type="textinline" id="|CR$Qyjn-4c9atQy%c]4">
+                        <field name="text">255, 0, 0</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="webfor" id="R9`A~cG8{S9[R*%!7$9~">
+                        <value name="letter">
+                          <shadow type="textinline" id=".wF-chp1+*U7.$Gw6BbI">
+                            <field name="text">colour</field>
+                          </shadow>
+                        </value>
+                        <value name="no">
+                          <shadow type="textinline" id="hti_:`?@O@z_39e3C3u^">
+                            <field name="text">25</field>
+                          </shadow>
+                        </value>
+                        <statement name="DO">
+                          <block type="colour" id="IcW7Ldz]=aLD!uHK}ywX">
+                            <field name="turtle" id="kue-?IAdDJx+_G__6]b_">turtle</field>
+                            <value name="text">
+                              <shadow type="textinline" id="^kE(oJ6SJ1TbiMmL;ywQ">
+                                <field name="text">10 * colour, 0, 255 - (10 * colour)</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="webfor" id="@C2BvQUT~?#bqQ)IbHu]">
+                                <value name="letter">
+                                  <shadow type="textinline" id="Sr]O~KCLSuao}aBnrypA">
+                                    <field name="text">i</field>
+                                  </shadow>
+                                </value>
+                                <value name="no">
+                                  <shadow type="textinline" id="=8n!+(fVCf0JNGWCF9+G">
+                                    <field name="text">10</field>
+                                  </shadow>
+                                </value>
+                                <statement name="DO">
+                                  <block type="webfor" id="p~E0{EZO3*{lje$8kWi|">
+                                    <value name="letter">
+                                      <shadow type="textinline" id="kafj{z)u2:n$3N$15Z!r">
+                                        <field name="text">j</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="no">
+                                      <shadow type="textinline" id="=B?njfhQc[?]Q.S;AgMX">
+                                        <field name="text">3</field>
+                                      </shadow>
+                                    </value>
+                                    <statement name="DO">
+                                      <block type="directions" id="A`i~Ap6@0UPV=kHL/sWp">
+                                        <field name="turtle" id="kue-?IAdDJx+_G__6]b_">turtle</field>
+                                        <field name="options">forward</field>
+                                        <value name="text">
+                                          <shadow type="textinline" id="+),sZCR+2uyg1#HM-{.m">
+                                            <field name="text">i * 10</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="directions" id="5pve6-{r83Jw)2=uje;r">
+                                            <field name="turtle" id="kue-?IAdDJx+_G__6]b_">turtle</field>
+                                            <field name="options">left</field>
+                                            <value name="text">
+                                              <shadow type="textinline" id="pWCp^fSG+iBtA9x?lw54">
+                                                <field name="text">120</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="directions" id="U~WjmS7L;?;o;4Uc-Q8g">
+                                    <field name="turtle" id="kue-?IAdDJx+_G__6]b_">turtle</field>
+                                    <field name="options">left</field>
+                                    <value name="text">
+                                      <shadow type="textinline" id="pP#8auRcFM{EN%wkn6-f">
+                                        <field name="text">(360 / 25) * colour</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

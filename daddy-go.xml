@@ -1,0 +1,114 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="*w.Z)|9$8Y0E[(:x%mPE">turtle</variable>
+    <variable id="Bbv7yA$T3]rfXJ3)~Vq$">screen</variable>
+    <variable id="sj,y731F0lgYn:Iox1q_">length</variable>
+    <variable id="T#:!F`d(2}DkA?k_sS;h">angle</variable>
+  </variables>
+  <block type="import_turtle" id="=Z|i6DW4uz.J4gGS+t$v" x="-662" y="-343">
+    <next>
+      <block type="turtle" id="VA`-O#32V?r8eSN3RxR3">
+        <field name="turtle" id="*w.Z)|9$8Y0E[(:x%mPE">turtle</field>
+        <next>
+          <block type="goto" id="i1WKHI*M:WHda[22`ggA">
+            <field name="turtle" id="*w.Z)|9$8Y0E[(:x%mPE">turtle</field>
+            <value name="text">
+              <shadow type="textinline" id="n%|fKqGsRO7BJ7ZVXTF`">
+                <field name="text">0, 0</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="screeninit" id="5.0!-wH@Rtcn)},ZaLaf">
+                <field name="wn" id="Bbv7yA$T3]rfXJ3)~Vq$">screen</field>
+                <next>
+                  <block type="background" id="EqH@9dX*tcTj6N_kVCU2">
+                    <field name="wn" id="Bbv7yA$T3]rfXJ3)~Vq$">screen</field>
+                    <value name="text">
+                      <shadow type="textinline" id="i,P+DO}X+~s|^K=~{tWI">
+                        <field name="text">0, 0, 0</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="iIe9dW.QV*:eeGEa]Q{G">
+                        <field name="VAR" id="sj,y731F0lgYn:Iox1q_">length</field>
+                        <field name="NAME">=</field>
+                        <value name="varset">
+                          <shadow type="textinline" id="F%$AZkw]7JmQmUoX5%Vw">
+                            <field name="text">40</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="#eGZ7yO0fJ#LsO$t1wHe">
+                            <field name="VAR" id="T#:!F`d(2}DkA?k_sS;h">angle</field>
+                            <field name="NAME">=</field>
+                            <value name="varset">
+                              <shadow type="textinline" id="pzHkHxH(n4,rS0/m9D/Y">
+                                <field name="text">55</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="webfor" id="Kyr;5tR}^tnYmzh=0hzc">
+                                <value name="letter">
+                                  <shadow type="textinline" id=":1r@U7GN{Qs$pw/J9A@U">
+                                    <field name="text">i</field>
+                                  </shadow>
+                                </value>
+                                <value name="no">
+                                  <shadow type="textinline" id="3)QVW|R%[qJj~ZL`Qvf)">
+                                    <field name="text">255</field>
+                                  </shadow>
+                                </value>
+                                <statement name="DO">
+                                  <block type="colourpen" id="w^Q1F%NI!.i+~})Qk!|h">
+                                    <field name="turtle" id="*w.Z)|9$8Y0E[(:x%mPE">turtle</field>
+                                    <value name="text">
+                                      <shadow type="textinline" id="XvH,Ys*4rW{A~C)TD0}%">
+                                        <field name="text">i, 100, 255-i</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="directions" id="`K-,WSNmSR*!O[H$d)~h">
+                                        <field name="turtle" id="*w.Z)|9$8Y0E[(:x%mPE">turtle</field>
+                                        <field name="options">forward</field>
+                                        <value name="text">
+                                          <shadow type="textinline" id="dz6djxl.KF}hj!!!V5oW">
+                                            <field name="text">90</field>
+                                          </shadow>
+                                          <block type="variables_get" id="]M1NL)rAO^k?^;g$Hyu!">
+                                            <field name="VAR" id="sj,y731F0lgYn:Iox1q_">length</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="directions" id="9Dw5PulkB]#xr`HG~N[C">
+                                            <field name="turtle" id="*w.Z)|9$8Y0E[(:x%mPE">turtle</field>
+                                            <field name="options">left</field>
+                                            <value name="text">
+                                              <shadow type="textinline" id="%-C!ibHgKYS)=*~O-TyM">
+                                                <field name="text">90</field>
+                                              </shadow>
+                                              <block type="variables_get" id="dy{ctyc)Q{7/(sPc53Xl">
+                                                <field name="VAR" id="T#:!F`d(2}DkA?k_sS;h">angle</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
